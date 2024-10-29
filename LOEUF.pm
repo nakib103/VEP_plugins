@@ -194,7 +194,7 @@ sub run {
 sub parse_data {
   my ($self, $line) = @_;
   my @values = split /\t/, $line;
-  my ($transcript_id, $oe_lof_upper, $gene_id) = @values[1,30,64];
+  my ($transcript_id, $oe_lof_upper, $gene_id) = @values[2,22,1];
   return {
     gene_id => $gene_id,
     transcript_id => $transcript_id,
